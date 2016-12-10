@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Time Saver",
+  "description": "This extension blocks a specified set of sites during user specified periods of the week. And prevents the user from using incognito mode",
+  "version": "1.0",
+
+  "background": {
+      "scripts":["redirect.js"]
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking",
+    "storage"
+  ]
+}
