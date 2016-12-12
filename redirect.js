@@ -33,6 +33,9 @@ function isAllowed(url,timeStamp){
         endDate.setDay(time["endDay"]);
         endDate.setHours(time["endHour"]);
         endDate.setMinutes(time["endMinute"]);
+        //console.log(startDate)
+        //console.log(date)
+        //console.log(endDate)
         if(!(startDate < date && endDate > date)){
             //console.log(JSON.stringify(time["urls"],null,'\t'))
             urls = time["urls"]
