@@ -12,6 +12,39 @@
 <button id="save">Save</button>
 <div id="status"></div>
 
+<div><p>Site blocking works with whitelisted times and blacklisted sites. 
+    For instance to block "www.evil.com" and "www.distraction.com" from 1:30AM Monday to 4:37PM Friday
+    and any site that has "fun" in the url on Sunday, the filter would be: </p>
+    <pre>
+{
+    "times": [
+        {
+            "endDay": 5,
+            "endHour": 16,
+            "endMinute": 37,
+            "startDay": 1,
+            "startHour": 1,
+            "startMinute": 30,
+            "urls": [
+                "www.evil.com",
+                "www.distraction.com"
+            ]
+        },
+        {
+            "endDay": 1,
+            "endHour": 0,
+            "endMinute": 0,
+            "startDay": 0,
+            "startHour": 18,
+            "startMinute": 0,
+            "urls": [
+                "fun"
+            ]
+        }
+    ]
+}
+    </pre>
+    <p>It's a terrible UI. Deal with it.</p></div>
 <script src="options.js"></script>
 </body>
 </html>
