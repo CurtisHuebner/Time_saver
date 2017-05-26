@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Time Saver",
-  "description": "Bocks a specified set of sites during user specified periods of the week using a JSON formatted string.",
+  "description": "Block a specified set of sites during specified periods of the week using a JSON formatted string.",
   "version": "0.0.1",
 
   "background": {
